@@ -1,0 +1,53 @@
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RoseChartActivity"
+    android:orientation="vertical"
+    >
+
+        <com.engineermaster.demoapp.RoseChart
+            android:id="@+id/rosechart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_margin="10dp"
+            android:text="Click here to see Database Records"
+            android:textColor="@android:color/white"
+            fbutton:buttonColor="@color/fbutton_color_turquoise"
+            fbutton:shadowEnabled="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Life is one indivisible whole ! How will trip if your Wheel of Life will be one of the wheels of real life in your Vehicle ?
+\n
+\nLook carefully at the areas where you would like to increase your level of satisfaction ?
+\n
+\nThink about what level of individual areas will be satisfactory for you ? What are the
+relationships and dependencies between different areas ? What impact will have to increase the level of satisfaction in one area to the other ?
+\n
+"
+            />
+
+</LinearLayout>
+</ScrollView>

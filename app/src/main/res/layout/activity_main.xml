@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:rsv="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.github.channguyen.rsv.RangeSliderView
+            android:id="@+id/rsv_large"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            rsv:filledColor="#FF6600"
+            android:visibility="gone"
+            />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp">
+
+
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/title_page_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_margin="10dp"
+                android:text="Start"
+                android:textColor="@android:color/white"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowEnabled="true"
+                android:layout_centerVertical="true"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/buttons">
+        <!--Scrollable content here-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_page_txt"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
